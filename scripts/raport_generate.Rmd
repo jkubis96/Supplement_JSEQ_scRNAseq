@@ -1,0 +1,649 @@
+--- 
+title: "JSEQ_scRNAseq - supplement manager (Supp.1)"
+date: "`r Sys.Date()`"
+output: html_document
+---
+  
+  
+```{r include=FALSE}
+
+library(gridExtra)
+library(grid)
+library(knitr)
+library(viridis)
+library(tidyverse)
+library(kableExtra)
+
+```
+
+\
+
+#### **Advantage of the JSEQ/CSSG® tool in high-resolution cell population discovery**
+
+
+\
+
+## *Supplement 1.1*
+### **Brain complexity**
+
+####### ***Warning!***  *Below we presented data as both HTML interactive and pdf static plots. Since the data are large in some instances [e.g. cerebellum], the interactive version can not always load properly on some PCs. In such case, the pdf static may be used. If possible, we recommend using the Opera browser.*
+
+\
+
+##### **Cerebellum - mouse data**
+
+\
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align="center"}
+
+
+knitr::include_graphics('https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Cerebellum/cerebellum.bmp', dpi = 300)
+
+
+```
+
+
+\
+
+#### **Data:**
+
+###### *Normalized expression table*
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, align="center"}
+
+
+df <- read.csv(file = 'https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/blob/main/supplementary_data/Cerebellum/cerebellum.csv?raw=true', header = T, sep = ',', row.names = 1, check.names = F)[1:5,1:5]
+
+
+df[1:5,1:5]  %>%
+  kbl() %>%
+  kable_material(c("striped", "hover"), font_size = 10)
+
+```
+
+##### **[[Download_table](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/raw/main/supplementary_data/Cerebellum/cerebellum.csv)]{style="float:right"}**
+
+\
+
+##### **Cell composition**
+
+##### *Subclasses* **[59]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Cerebellum/subclasses.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Cerebellum/subclasses.pdf)
+
+
+##### *Subtypes* **[141]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Cerebellum/subtypes.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Cerebellum/subtypes.pdf)
+
+
+
+
+
+\
+
+##### **Motor cortex - mouse data**
+
+\
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align="center"}
+
+
+knitr::include_graphics('https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Motor_cortex/motor.bmp', dpi = 300)
+
+
+```
+
+\
+
+#### **Data:**
+
+###### *Normalized expression table*
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, align="center"}
+
+
+df <- read.csv(file = 'https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/blob/main/supplementary_data/Motor_cortex/motor_cortex.csv?raw=true', header = T, sep = ',', row.names = 1, check.names = F)[1:5,1:5]
+
+
+
+df[1:5,1:5]  %>%
+  kbl() %>%
+  kable_material(c("striped", "hover"), font_size = 10)
+  
+
+```
+
+##### **[[Download_table](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/raw/main/supplementary_data/Motor_cortex/motor_cortex.csv)]{style="float:right"}**
+
+\
+
+##### **Cell composition**
+
+##### *Subclasses* **[18]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Motor_cortex/subclasses.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Motor_cortex/subclasses.pdf)
+
+
+##### *Subtypes* **[30]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Motor_cortex/subtypes.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Motor_cortex/subtypes.pdf)
+
+
+
+
+\
+
+
+##### **Auditory cortex - mouse data**
+
+\
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align="center"}
+
+
+knitr::include_graphics('https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Auditory_cortex/auditory.bmp', dpi = 300)
+
+
+```
+
+
+\
+
+#### **Data:**
+
+###### *Normalized expression table*
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, align="center"}
+
+
+df <- read.csv(file = 'https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/blob/main/supplementary_data/Auditory_cortex/auditory_cortex.csv?raw=true', header = T, sep = ',', row.names = 1, check.names = F)[1:5,1:5]
+
+
+
+df[1:5,1:5]  %>%
+  kbl() %>%
+  kable_material(c("striped", "hover"), font_size = 10) 
+ 
+
+```
+
+##### **[[Download_table](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/raw/main/supplementary_data/Auditory_cortex/auditory_cortex.csv)]{style="float:right"}**
+
+\
+
+##### **Cell composition**
+
+##### *Subclasses* **[28]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Auditory_cortex/subclasses.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Auditory_cortex/subclasses.pdf)
+
+
+##### *Subtypes* **[52]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Auditory_cortex/subtypes.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Auditory_cortex/subtypes.pdf)
+
+
+
+\
+
+##### **Orbitofrontal cortex - mouse data**
+
+\
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align="center"}
+
+
+knitr::include_graphics('https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Orbitofrontal_cortex/orbitofrontal.bmp', dpi = 300)
+
+
+```
+
+\
+
+#### **Data:**
+
+###### *Normalized expression table*
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, align="center"}
+
+
+df <- read.csv(file = 'https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/blob/main/supplementary_data/Orbitofrontal_cortex/orbitofrontal_cortex.csv?raw=true', header = T, sep = ',', row.names = 1, check.names = F)[1:5,1:5]
+
+
+
+df[1:5,1:5]  %>%
+  kbl() %>%
+  kable_material(c("striped", "hover"), font_size = 10)
+  
+
+```
+
+##### **[[Download_table](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/raw/main/supplementary_data/Orbitofrontal_cortex/orbitofrontal_cortex.csv)]{style="float:right"}**
+
+\
+
+##### **Cell composition**
+
+##### *Subclasses* **[25]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Orbitofrontal_cortex/subclasses.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Orbitofrontal_cortex/subclasses.pdf)
+
+
+##### *Subtypes* **[39]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Orbitofrontal_cortex/subtypes.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Orbitofrontal_cortex/subtypes.pdf)
+
+
+
+
+\
+
+
+##### **Entorhinal cortex - mouse data**
+
+\
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align="center"}
+
+
+knitr::include_graphics('https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Entorhinal_cortex/enthorinal.bmp', dpi = 300)
+
+
+```
+
+
+\
+
+#### **Data:**
+
+###### *Normalized expression table*
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, align="center"}
+
+
+df <- read.csv(file = 'https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/blob/main/supplementary_data/Entorhinal_cortex/entorhinal_cortex.csv?raw=true', header = T, sep = ',', row.names = 1, check.names = F)[1:5,1:5]
+
+
+
+df[1:5,1:5]  %>%
+  kbl() %>%
+  kable_material(c("striped", "hover"), font_size = 10)
+
+```
+
+##### **[[Download_table](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/raw/main/supplementary_data/Entorhinal_cortex/entorhinal_cortex.csv)]{style="float:right"}**
+
+\
+
+##### **Cell composition**
+
+##### *Subclasses* **[33]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Entorhinal_cortex/subclasses.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Entorhinal_cortex/subclasses.pdf)
+
+
+##### *Subtypes* **[69]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Entorhinal_cortex/subtypes.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Entorhinal_cortex/subtypes.pdf)
+
+
+
+\
+
+##### **Hippocampus - mouse data**
+
+\
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align="center"}
+
+
+knitr::include_graphics('https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Hippocampus/hippocampus.bmp', dpi = 300)
+
+
+```
+
+
+\
+
+#### **Data:**
+
+###### *Normalized expression table*
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, align="center"}
+
+
+df <- read.csv(file = 'https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/blob/main/supplementary_data/Hippocampus/hippocampus.csv?raw=true', header = T, sep = ',', row.names = 1, check.names = F)[1:5,1:5]
+
+
+
+df[1:5,1:5]  %>%
+  kbl() %>%
+  kable_material(c("striped", "hover"), font_size = 10)
+ 
+
+```
+
+##### **[[Download_table](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/raw/main/supplementary_data/Hippocampus/hippocampus.csv)]{style="float:right"}**
+
+\
+
+##### **Cell composition**
+
+##### *Subclasses* **[12]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Hippocampus/subclasses.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Hippocampus/subclasses.pdf)
+
+
+##### *Subtypes* **[23]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Hippocampus/subtypes.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Hippocampus/subtypes.pdf)
+
+
+
+
+\
+
+##### **Striatum - mouse data**
+
+\
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align="center"}
+
+
+knitr::include_graphics('https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Striatum/striatum.bmp', dpi = 300)
+
+
+```
+
+
+\
+
+#### **Data:**
+
+###### *Normalized expression table*
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, align="center"}
+
+
+df <- read.csv(file = 'https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/blob/main/supplementary_data/Striatum/striatum.csv?raw=true', header = T, sep = ',', row.names = 1, check.names = F)[1:5,1:5]
+
+
+
+df[1:5,1:5]  %>%
+  kbl() %>%
+  kable_material(c("striped", "hover"), font_size = 10)
+  
+
+```
+
+##### **[[Download_table](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/raw/main/supplementary_data/Striatum/striatum.csv)]{style="float:right"}**
+
+\
+
+##### **Cell composition**
+
+##### *Subclasses* **[12]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Striatum/subclasses.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Striatum/subclasses.pdf)
+
+
+##### *Subtypes* **[32]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Striatum/subtypes.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Striatum/subtypes.pdf)
+
+
+
+\
+
+##### **Thalamus - mouse data**
+
+\
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align="center"}
+
+
+knitr::include_graphics('https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Thalamus/thalamus.bmp', dpi = 300)
+
+
+```
+
+
+\
+
+#### **Data:**
+
+###### *Normalized expression table*
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, align="center"}
+
+
+df <- read.csv(file = 'https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/blob/main/supplementary_data/Thalamus/thalamus.csv?raw=true', header = T, sep = ',', row.names = 1, check.names = F)[1:5,1:5]
+
+
+df[1:5,1:5]  %>%
+  kbl() %>%
+  kable_material(c("striped", "hover"), font_size = 10)
+  
+```
+
+##### **[[Download_table](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/raw/main/supplementary_data/Thalamus/thalamus.csv)]{style="float:right"}**
+
+\
+
+##### **Cell composition**
+
+##### *Subclasses* **[12]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Thalamus/subclasses.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Thalamus/subclasses.pdf)
+
+
+##### *Subtypes* **[32]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Thalamus/subtypes.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Thalamus/subtypes.pdf)
+
+
+
+\
+
+
+##### **Hypothalamus - mouse data**
+
+\
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align="center"}
+
+
+knitr::include_graphics('https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Hypothalamus/hypothalamus.bmp', dpi = 300)
+
+
+```
+
+
+\
+
+#### **Data:**
+
+###### *Normalized expression table*
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, align="center"}
+
+
+df <- read.csv(file = 'https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/blob/main/supplementary_data/Hypothalamus/hypothalamus.csv?raw=true', header = T, sep = ',', row.names = 1, check.names = F)[1:5,1:5]
+
+
+df[1:5,1:5]  %>%
+  kbl() %>%
+  kable_material(c("striped", "hover"), font_size = 10)
+  
+
+```
+
+##### **[[Download_table](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/raw/main/supplementary_data/Hypothalamus/hypothalamus.csv)]{style="float:right"}**
+
+\
+
+##### **Cell composition**
+
+##### *Subclasses* **[18]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Hypothalamus/subclasses.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Hypothalamus/subclasses.pdf)
+
+
+
+##### *Subtypes* **[45]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Hypothalamus/subtypes.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Hypothalamus/subtypes.pdf)
+
+
+
+
+\
+
+
+
+
+##### **Brain organoids - human data**
+
+\
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align="center"}
+
+
+knitr::include_graphics('https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Human_brain_organoids/org.png', dpi = 300)
+
+
+```
+
+
+\
+
+#### **Data:**
+
+###### *Normalized expression table*
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, align="center"}
+
+
+df <- read.csv(file = 'https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/blob/main/supplementary_data/Human_brain_organoids/organoids.csv?raw=true', header = T, sep = ',', row.names = 1, check.names = F)[1:5,1:5]
+
+
+
+df[1:5,1:5]  %>%
+  kbl() %>%
+  kable_material(c("striped", "hover"), font_size = 10)
+  
+
+```
+
+##### **[[Download_table](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/raw/main/supplementary_data/Human_brain_organoids/organoids.csv)]{style="float:right"}**
+
+\
+
+##### **Cell composition**
+
+##### *Subclasses* **[22]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Human_brain_organoids/subclasses.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Human_brain_organoids/subclasses.pdf)
+
+
+##### *Subtypes* **[157]** [Interactive](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Human_brain_organoids/subtypes.html) \ [Static](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Human_brain_organoids/subtypes.pdf)
+
+\
+\
+
+## *Supplement 1.2*
+### **Cell subtypes function enrichment**
+
+\
+
+###### *Table of the cell subtypes (CSSG) gene function enrichment*
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, align="center"}
+
+library(openxlsx)
+
+df <- read.xlsx("https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/blob/main/supplementary_data/Enrichment/cell_subtypes_enrichment.xlsx?raw=true",sheet=1)[1:5,7:11]
+
+for (i in 1:nrow(df)) {
+  df$biological_process[i] <- sub(',.*','',df$biological_process[i])
+  df$cellular_component[i] <- sub(',.*','',df$cellular_component[i])
+  df$molecular_function[i] <- sub(',.*','',df$molecular_function[i])
+  
+}
+
+
+df  %>%
+  kbl() %>%
+  kable_material(c("striped", "hover"), font_size = 11)
+  
+
+```
+
+\
+
+##### **[[Download_table](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/raw/main/supplementary_data/Enrichment/cell_subtypes_enrichment.xlsx)]{style="float:right"}**
+
+\
+
+##### *Enrichment_tool* [GEDSpy](https://github.com/jkubis96/GEDSpy)
+
+\
+\
+
+## *Supplement 1.3*
+### **AD-related genes analysis**
+
+\
+
+### *Supplement 1.3.1*
+
+\
+
+##### **Distrubution of AD-related genes in mouse brain and human brain organoids**
+
+\
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align="center"}
+
+
+knitr::include_graphics('https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Alzheimer_Disease/Alzheimer%20Disease_short.bmp', dpi = 300)
+
+
+```
+
+##### *[The relative expression range for each gene in every region was estimated separately]{style="float:right"}*
+
+\
+\
+\
+
+##### **[[Show_image](https://jkubis96.github.io/Supplement_JSEQ_scRNAseq/supplementary_data/Alzheimer_Disease/Alzheimer_Disease.pdf)]{style="float:left"}**
+
+
+\
+\
+\
+
+
+### *Supplement 1.3.2*
+
+\
+
+##### *Table of AD-related gene deregulated expression in the cell subtypes*
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, align="center"}
+
+library(openxlsx)
+
+df <- read.xlsx("https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/blob/main/supplementary_data/Alzheimer_Disease/AD_genes_relations.xlsx?raw=true",sheet=1)[1:5,c(1,2,8,14,20)]
+
+
+
+df  %>%
+  kbl() %>%
+  kable_material(c("striped", "hover"), font_size = 11)
+  
+
+```
+
+
+###### *[**p** - p-value of Wilcoxon-Test between local subtypes within an initial cluster, **subclass_DE** - direct deregulated expression (DE) [explained in Methods: Supplementary analysis] between the subtype and each local subtype within an initial cluster, **global_DE** - direct deregulated expression between the subtype and each global subtypes separately for every region/structure]{style="float:right"}*
+
+\
+
+##### **[[Download_table](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/jkubis96/Supplement_JSEQ_scRNAseq/raw/main/supplementary_data/Alzheimer_Disease/AD_genes_relations.xlsx)]{style="float:right"}**
+
+\
+
+\
+
+
+
+## **Disclaimer**
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+
+cat('The analysis was performed by the non-profit and open-source AI/ML JSEQ/CSSG pipeline. More information is available on GitHub. In case of further questions, please contact us. The JSEQ® was created in the Department of Molecular Neurobiology, Institute of Bioorganic Chemistry, Polish Academy of Sciences.')
+
+```
+
+##### **[JSEQ® source](https://github.com/jkubis96/JSEQ_scRNAseq)**
+
+\
+
+## **Graphical source**
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+
+cat('Brain structures: \n
+- Allen Brain Explorer® [http://connectivity.brain-map.org/3d-viewer?v=1] \n
+Human brain organoids: \n
+- Own source of Department of Molecular Neurobiology, Institute of Bioorganic Chemistry, Polish Academy of Sciences
+    ')
+
+```
+\
